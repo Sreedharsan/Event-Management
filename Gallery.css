@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Press+Start+2P&display=swap');
+
+:root{
+    --main-color:#f3400f;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2 linear;
+}
+
+.heading{
+    padding: 2rem;
+
+    font-size: xx-large;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+body{
+    background: #222;
+}
+
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    gap: 1.5rem;
+}
+
+
+.gallery .box-container .box{
+    position: relative;
+    height: 25rem;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}

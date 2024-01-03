@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&family=Press+Start+2P&display=swap');
+
+:root{
+    --main-color:#f3400f;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2 linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden;
+    scroll-padding-top: 7rem ;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #222;
+}
+
+section{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
+    gap: 1.5rem;
+}
+
+.service .box-container .box{
+    border-radius: .5rem;
+    background: #333;
+    text-align: center;
+    padding:2.5rem ;
+}
+
+/* .service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background: var(--main-color);
+    color: #fff;
+} */
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:var(--main-color);
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color: #eee;
+    line-height: 1.8;
+}
